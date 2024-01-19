@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo do X</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	 <div class="background">
+
+        <header>
+            <div class="logo">
+                <a href="#" id="logoLink"></a>
+                <i class="fas fa-hamburger"></i>
+            </div>
+            <div class="cabeçalho-link">
+                <div class="cabeçalho-link-container">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="sobre.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="servicos.html">Serviços</a>
+                        </li>
+                        <li>
+                            <a href="locais.html">Locais</a>
+                        </li>
+                        <button>Contato</button>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-section">
+
+            <div class="text">
+                <h3>Bem vindos ao</h3>
+                <h1>Mundo do X </h1>
+                <p>O paraíso dos nossos melhores burguers do catálogo
+                    <br>seguindo a opinião do nosso respeitável público!</p>
+                    
+                <div class="redes-sociais">
+                    <a href="#"><i class='fab fa-facebook'></i></a>
+                    <a href="#"><i class='fab fa-twitter'></i></a>
+                    <a href="#"><i class='fab fa-instagram'></i></a>
+                    <a href="#"><i class='fab fa-telegram'></i></a>
+                    <a href="#"><i class='fab fa-whatsapp'></i></a>
+                    
+                    <div class="multiple-items slider">
+                        <div><img src="Hamburguer1.jpg" alt="Imagem 1"></div>
+                        <div><img src="Hamburguer2.jpg" alt="Imagem 2"></div>
+                        <div><img src="Hamburguer3.jpg" alt="Imagem 3"></div>
+                        <div><img src="Hamburguer4.jpg" alt="Imagem 4"></div>
+                        <div><img src="Hamburguer5.jpg" alt="Imagem 5"></div>
+                        <div><img src="Hamburguer6.jpg" alt="Imagem 6"></div>
+                        <div><img src="Hamburguer7.jpg" alt="Imagem 7"></div>
+                        <div><img src="Hamburguer8.jpg" alt="Imagem 8"></div>
+                        <div><img src="Hamburguer9.jpg" alt="Imagem 9"></div>
+                        <div><img src="Hamburguer10.jpg" alt="Imagem 10"></div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            
+            var logoLink = document.getElementById("logoLink");
+    
+            logoLink.addEventListener("click", function (event) {
+               
+                event.preventDefault();
+
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.multiple-items').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            });
+        });
+    </script>
+
+</body>
+</html>
